@@ -1,39 +1,40 @@
-###-------- READ ME ( STEPS FOR COMPLETE SETUP OF FALL DETECTION ) ---------###
-###---- HOW TO RUN FALL DETECTION MODEL ----###
+##--------  STEPS FOR COMPLETE SETUP OF FALL DETECTION MODEL  ---------##
+
 
 ## 📦 1. Clone the Repository :-
-      .)clone the repository "https://muneeb_saif@bitbucket.org/reedling/yolov5_deployments.git".
-      .)at the end of git clone command add " --branch fall ".
+      .) Clone the repository "https://muneeb_saif@bitbucket.org/reedling/yolov5_deployments.git".
+      .) At the end of git clone command add " --branch fall ".
+      .) Full command is " git clone https://muneeb_saif@bitbucket.org/reedling/yolov5_deployments.git --branch fall ".
  
 ## 2. RENAME SCRIPT :-  
-      .)after the repo is cloned change the name of "detect.py" to "inference.py".
-      .)next step is to create environment suitable for our code.
+      .) After the repository is cloned change the name of "detect.py" to "inference.py".
+      .) Next step is to create environment suitable for our code.
 
 
-## 3. SETTING UP ENVIRONMENT :-
-      .) first create a new environment "conda create --name fall_det python=3.9"
-      .) activate the environment using command "conda activate fall_det"
-      .) install the requirements using pip command :-
+## 3. 🧪 SETTING UP ENVIRONMENT :-
+      .) First create a new environment "conda create --name fall_det python=3.9"
+      .) Activate the environment using command "conda activate fall_det"
+      .) Now install the requirements.
 
-## 4. INSTALLING REQUIRED REQUIREMENTS:-
+## 4. 📥 INSTALLING REQUIRED DEPENDENCIES :-
       .) pip install torch
       .) pip install opencv-python
       .) pip install Ultralytics
       .) pip install dill
       
-## 5. GIVING WEIGHT PATH :-
+## 5. ⚙️ CONFIGURE WEIGHT PATH :-
 
-      .) after all these steps goto your inference.py file
-      .) the .pt file is present in " /weights/fal_it5_athetic_data.pt "
-      .) give the path of the weight file in run and parse argument in " default = "path to your pt file" "
+      .) After all these steps goto your inference.py file
+      .) The .pt file is present in " /weights/fal_it5_athetic_data.pt "
+      .) Give the path of the weight file in run and parse argument in " default = "path to your pt file" "
       
-## 6. ALL SET RUN THE CODE :-
+## 6. ✅ You're All Set! :-
 
-      .) after it run your code in terminal "python inference.py "
+      .) After it run your code in terminal "python inference.py "
       
 ## 7. RESULTS SAVED AT :-
 
-      .) the result will be saved in folder " final_videos_images " ; output =  image and .json
+      .) The result will be saved in folder " final_videos_images " ; output =  image and .json
 
 
 
@@ -47,12 +48,24 @@
     os.environ["QT_QPA_PLATFORM"] = "offscreen"
     os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
     
+    NOTE : os is already imported so you just have to add the "DISPLAY" and "QT_QPA_PLATFORM " line of codes .. Also import sys IF not imported .
+    
 ## 2. GIVING PATH OF RTSP/VIDEO :-
 
-    .) give the path of rtsp in the code
-    .) give path in parse arguments " default="path to rtsp or video" "
+    .) Give the path of rtsp in the code
+    .) Give path in parse arguments " default="path to rtsp or video" "
     
-## 3. ALL SET RUN THE CODE :-
+## 3. ✅ You're All Set! :-
 
-    .) run the inference code 
-    .) use command " python inference.py "
+    .) Run the inference code 
+    .) Use command " python inference.py "
+    
+    
+## 📁 PROJECT STRUCTURE :-
+
+    fall_detection/
+    ├── inference.py           # Main script
+    ├── weights/               # Trained model (.pt files)
+    ├── data/                  # Data configs (YAMLs)
+    ├── utils/                 # Helper scripts
+    └── final_videos_images/   # Output results (images + JSON)
