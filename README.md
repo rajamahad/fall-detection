@@ -14,7 +14,7 @@
 ## 3. 🧪 SETTING UP ENVIRONMENT :-
       .) First create a new environment "conda create --name fall_det python=3.9"
       .) Activate the environment using command "conda activate fall_det"
-      .) Now install the r.
+      .) Now install the dependencies using pip command.
 
 ## 4. 📥 INSTALLING REQUIRED DEPENDENCIES :-
       .) pip install torch
