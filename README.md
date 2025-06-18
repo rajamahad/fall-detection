@@ -1,4 +1,4 @@
-##--------  STEPS FOR COMPLETE SETUP OF FALL DETECTION MODEL  ---------##
+###----------------  STEPS FOR COMPLETE SETUP OF FALL DETECTION MODEL  -----------------###
 
 
 ## 📦 1. Clone the Repository :-
@@ -14,7 +14,7 @@
 ## 3. 🧪 SETTING UP ENVIRONMENT :-
       .) First create a new environment "conda create --name fall_det python=3.9"
       .) Activate the environment using command "conda activate fall_det"
-      .) Now install the requirements.
+      .) Now install the r.
 
 ## 4. 📥 INSTALLING REQUIRED DEPENDENCIES :-
       .) pip install torch
@@ -28,7 +28,7 @@
       .) The .pt file is present in " /weights/fal_it5_athetic_data.pt "
       .) Give the path of the weight file in run and parse argument in " default = "path to your pt file" "
       
-## 6. ✅ You're All Set! :-
+## 6. ✅ YOU'RE ALL SET! :-
 
       .) After it run your code in terminal "python inference.py "
       
@@ -38,7 +38,7 @@
 
 
 
-### -----NOTE : IF YOU WANT TO RUN RTSP OR VIDEO ----###
+### NOTE : IF YOU WANT TO USE THIS MODEL FOR RTSP/VIDEO THEN APPLY THESE STEPS TOO .
 
 ## 1. ADD FUNCTION :-
 
