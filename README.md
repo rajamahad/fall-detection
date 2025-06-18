@@ -1,7 +1,7 @@
 ###----------------  STEPS FOR COMPLETE SETUP OF FALL DETECTION MODEL  -----------------###
 
 
-## 📦 1. Clone the Repository :-
+## 📦 1. CLONE THE REPOSITORY  :-
       .) Clone the repository "https://muneeb_saif@bitbucket.org/reedling/yolov5_deployments.git".
       .) At the end of git clone command add " --branch fall ".
       .) Full command is " git clone https://muneeb_saif@bitbucket.org/reedling/yolov5_deployments.git --branch fall ".
@@ -55,7 +55,7 @@
     .) Give the path of rtsp in the code
     .) Give path in parse arguments " default="path to rtsp or video" "
     
-## 3. ✅ You're All Set! :-
+## 3. ✅ YOU'RE ALL SET! :-
 
     .) Run the inference code 
     .) Use command " python inference.py "
