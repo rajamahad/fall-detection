@@ -26,7 +26,7 @@
 
       .) After all these steps goto your inference.py file
       .) The .pt file is present in " /weights/fal_it5_athetic_data.pt "
-      .) Give the path of the weight file in run and parse argument in " default = "path to your pt file" "
+      .) Give the path of the weight file in run and parse argument at " default = "path to your pt file" "
       
 ## 6. ✅ YOU'RE ALL SET! :-
 
